@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		title App
+		link(href="styles/app.css" type="text/css" rel="stylesheet")
+		meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no")
+	body(id="mainBody")
+		div(ng-app="App" class="pd-AppSuperParent")
+			div(ui-view="main-view" class="main-view-port")
+
+		script(src="./scripts/app.min.js")
+		script(src="./bower_components/angular-utils-pagination/dirPagination.js")
+		script(src="./bower_components/angular-material/angular-material.min.js")
+		script(src="./js/socket.io.min.js")
+		script(src="./js/ams.min.js")
